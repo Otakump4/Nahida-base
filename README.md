@@ -27,11 +27,11 @@
 </a>
 </p>
 
- 🎥 **[Assista ao video completo aqui](https://youtu.be/4n_HCLFXAhE?si=alnIqcgCDjBHOlV4)**
+ 🔗 **[Assista ao video completo aqui](https://youtu.be/4n_HCLFXAhE?si=alnIqcgCDjBHOlV4)**
 
 ---
 
-## ? Instala??o no Termux
+## 📥 Instalação no Termux
 
 <div align="center">
 <img src="https://user-images.githubusercontent.com/108157095/182052725-6568419a-6a9f-490a-85ea-90b94af694fe.png" alt="Termux" height="30">
@@ -39,7 +39,7 @@
 
 Siga os passos abaixo para instalar o bot:
 
-1. **Atualize e instale depend¨ºncias:**
+1. **Atualize e instale dependencias:**
  ```bash
  apt-get upgrade && apt-get update && pkg upgrade -y && pkg update -y && pkg install nodejs -y && pkg install nodejs-lts -y && pkg install ffmpeg -y && pkg install wget -y && pkg install git -y
  ```
@@ -49,17 +49,17 @@ Siga os passos abaixo para instalar o bot:
  termux-setup-storage
  ```
 
-3. **Acesse o diret¨®rio do armazenamento:**
+3. **Acesse o diretorio do armazenamento:**
  ```bash
  cd /sdcard/
  ```
 
-4. **Clone o reposit¨®rio do bot:**
+4. **Clone o repositorio do bot:**
  ```bash
  git clone https://github.com/Otakump4/Nahida-base.git
  ```
 
-5. **Entre no diret¨®rio do bot:**
+5. **Entre no diretorio do bot:**
  ```bash
  cd Nahida-base
  ```
