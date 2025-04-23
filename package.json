@@ -1,0 +1,50 @@
+{
+  "name": "Nahida-base",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "@whiskeysockets/baileys": "^6.17.16",
+    "awesome-phonenumber": "^7.2.0",
+    "axios": "^1.7.9",
+    "cfonts": "^3.3.0",
+    "chalk": "^5.4.1",
+    "child_process": "^1.0.2",
+    "colors": "^1.4.0",
+    "file-type": "^16.5.4",
+    "fluent-ffmpeg": "^2.1.3",
+    "form-data": "^4.0.1",
+    "fs": "^0.0.1-security",
+    "gradient-string": "^2.0.2",
+    "linkifyjs": "^4.2.0",
+    "mime-types": "^2.1.35",
+    "moment-timezone": "^0.5.47",
+    "node-cache": "^5.1.2",
+    "node-fetch": "^3.3.2",
+    "os": "^0.1.2",
+    "path": "^0.12.7",
+    "performance-now": "^2.1.0",
+    "pino": "^9.6.0",
+    "readline": "^1.3.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "whatsapp-bot",
+    "baileys",
+    "nodejs",
+    "automation",
+    "chatbot"
+  ],
+  "author": "lucas_mod_domina",
+  "license": "ISC",
+  "description": "Uma base bot do WhatsApp criado usando Baileys, projetado para automatizar várias tarefas e aprimorar a interação do usuário. Ideal para lidar com mídia, gerenciar grupos e fornecer experiências interativas.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Otakump4/Nahida-base.git"
+  },
+  "homepage": "https://zero-two.online",
+  "bugs": {
+    "url": "https://github.com/Otakump4/Nahida-base/issues"
+  }
+}
