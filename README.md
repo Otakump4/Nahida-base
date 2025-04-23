@@ -1,4 +1,4 @@
-<img src="https://readme-typing-svg.herokuapp.com/?font=mono&size=30&duration=4000&color=836FFF&center=falso&vCenter=falso&lines=𝐍𝐀𝐇𝐈𝐃𝐀-𝐁𝐀𝐒𝐄-𝐕𝟏✓;𝐁𝐎𝐓+𝐌𝐔𝐋𝐓𝐈+𝐃𝐄𝐕𝐈𝐂𝐄;1000+𝐂𝐎𝐌𝐀𝐍𝐃𝐎𝐒+2025;𝕷𝖚𝖈𝖆𝖘-𝖒𝖔𝖉-𝖉𝖔𝖒𝖎𝖓𝖆✰✰✰✰✰">      
+<img src="https://readme-typing-svg.herokuapp.com/?font=mono&size=30&duration=4000&color=836FFF&center=falso&vCenter=falso&lines=𝐍𝐀𝐇𝐈𝐃𝐀-𝐁𝐀𝐒𝐄-𝐕𝟏✓;𝐁𝐎𝐓+𝐌𝐔𝐋𝐓𝐈+𝐃𝐄𝐕𝐈𝐂𝐄;35+𝐂𝐎𝐌𝐀𝐍𝐃𝐎𝐒+2025;𝕷𝖚𝖈𝖆𝖘-𝖒𝖔𝖉-𝖉𝖔𝖒𝖎𝖓𝖆✰✰✰✰✰">      
 
 <h1 align="center">
 <p>
@@ -66,7 +66,7 @@ Siga os passos abaixo para instalar o bot:
 
 ---
 
-## ? Iniciando o Bot
+## 🚀 Iniciando o Bot
 
 <div align="center">
 <img src="https://user-images.githubusercontent.com/108157095/182053901-78e4a217-51ba-42a3-8ec5-38ed978ad752.png" alt="Iniciar Bot" height="30">
@@ -80,23 +80,23 @@ sh start.sh
 
 ---
 
-## ? Recursos do Bot
+## 🎉 Recursos do Bot
 
-- **Interface Din?mica:** Experi¨ºncia visual moderna e interativa.
+- **Interface Dinâmica:** Experiência visual moderna e interativa.
 - **Compatibilidade Multi-Device:** Acesse de qualquer dispositivo.
-- **Atualiza??es Constantes:** Fique sempre por dentro das ¨²ltimas novidades.
-- **35+ Comandos:** Uma ampla gama de funcionalidades para voc¨º explorar.
+- **Atualizações Constantes:** Fique sempre por dentro das últimas novidades.
+- **35+ Comandos:** Uma ampla gama de funcionalidades para você explorar.
 
 ---
 
-## ? Estat¨ªsticas e Suporte
+## 📊 Estatísticas e Suporte
 
 <div align="center">
-<img src="https://github-readme-stats.vercel.app/api?username=Otakump4&show_icons=true&theme=radical" alt="Estat¨ªsticas GitHub">
+<img src="https://github-readme-stats.vercel.app/api?username=Otakump4&show_icons=true&theme=radical" alt="Estatísticas GitHub">
 </div>
 
-Se encontrar algum problema ou tiver sugest?es, sinta-se ¨¤ vontade para abrir uma [issue](https://github.com/Otakump4/Nahida-base/issues) ou contribuir com o projeto.
+Se encontrar algum problema ou tiver sugestões, sinta-se à vontade para abrir uma [issue](https://github.com/Otakump4/Nahida-base/issues) ou contribuir com o projeto.
 
 ---
 
-<img src="https://readme-typing-svg.herokuapp.com/?font=mono&size=30&duration=4000&color=00FA9A&center=falso&vCenter=falso&lines=?+???????+??????^-^;@lucas_mod_domina;?????-???-???????????">     
+<img src="https://readme-typing-svg.herokuapp.com/?font=mono&size=30&duration=4000&color=00FA9A&center=falso&vCenter=falso&lines=𝖆+𝕽𝖊𝖆𝖑𝖊𝖟𝖆+𝕯𝖔𝖒𝖎𝖓𝖆^-^;@lucas_mod_domina;𝕷𝖚𝖈𝖆𝖘-𝖒𝖔𝖉-𝖉𝖔𝖒𝖎𝖓𝖆✰✰✰✰✰">     
