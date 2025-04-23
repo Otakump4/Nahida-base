@@ -2,7 +2,7 @@
 
 <h1 align="center">
 <p>
-<img src= "https://zero-two.info/uploads/images/file-1745447805865-948918569.jpeg" alt="NAHIDA BASE V1?" width="720">
+<img src= "https://zero-two.info/uploads/images/file-1745447805865-948918569.jpeg" alt="NAHIDA BASE V1✓" width="720">
 </p>
 
 <p align="center">
@@ -13,11 +13,11 @@
 
 ---
 
-## ? Apresenta??o do Bot
+## 🎥 Apresentação do Bot
 
 <p align="center">
 <a href="https://youtu.be/4n_HCLFXAhE?si=alnIqcgCDjBHOlV4" target="_blank">
-<img src="https://zero-two.info/uploads/images/file-1745447805865-948918569.jpeg" alt="V¨ªdeo do Bot" width="700">
+<img src="https://zero-two.info/uploads/images/file-1745447805865-948918569.jpeg" alt="Video do Bot" width="700">
 </a>
 </p>
 
@@ -27,7 +27,7 @@
 </a>
 </p>
 
-? **[Assista ao v¨ªdeo completo aqui](https://youtu.be/4n_HCLFXAhE?si=alnIqcgCDjBHOlV4)**
+ 🎥 **[Assista ao video completo aqui](https://youtu.be/4n_HCLFXAhE?si=alnIqcgCDjBHOlV4)**
 
 ---
 
