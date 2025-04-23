@@ -8,7 +8,7 @@
 <p align="center">
 <a href="#"><img src="https://img.shields.io/badge/BOT-MULTI--DEVICE-blue?style=for-the-badge" alt="BOT MULTI DEVICE"></a>
 <a href="#"><img src="https://img.shields.io/badge/Autor-@lucas_mod_domina-orange?style=for-the-badge&logo=github" alt="Autor"></a>
-<a href="#"><img src="https://img.shields.io/badge/Vers?o-V4.0-orange?style=for-the-badge&logo=github" alt="Vers?o"></a>
+<a href="#"><img src="https://img.shields.io/badge/Versão-V1.0-orange?style=for-the-badge&logo=github" alt="Versão"></a>
 </p>
 
 ---
