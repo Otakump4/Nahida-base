@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# // By: 𖧄 𝐋𝐔𝐂𝐀𝐒 𝐌𝐎𝐃 𝐃𝐎𝐌𝐈𝐍𝐀 𖧄
-# // Canal: https://whatsapp.com/channel/0029Va6riekH5JLwLUFI7P2B
+# By: 𖧄 𝐋𝐔𝐂𝐀𝐒 𝐌𝐎𝐃 𝐃𝐎𝐌𝐈𝐍𝐀 𖧄
+# Canal: https://whatsapp.com/channel/0029Va6riekH5JLwLUFI7P2B
 
 # Cores personalizadas
 BG='\033[40m'
@@ -14,8 +14,6 @@ CYAN='\033[1;36m'
 NC='\033[0m'
 
 # Configurações
-REPO_URL="https://github.com/Otakump4/Nahida-base.git"
-REPO_DIR="Nahida-base"
 TMP_DIR="/tmp"
 
 # Função para cabeçalho estilizado
@@ -96,33 +94,17 @@ printf "\n${GREEN}Dependências instaladas com sucesso!${NC}\n"
 sleep 2
 }
 
-# Executa o bot, clonando se necessário
+# Execução imediata do bot
 run_bot() {
 header
-if [ ! -d "$REPO_DIR" ]; then
-printf "${YELLOW}Repositório '$REPO_DIR' não encontrado! Clonando...${NC}\n"
-git clone "$REPO_URL" "$REPO_DIR" || { printf "${RED}Falha ao clonar o repositório.${NC}\n"; exit 1; }
-printf "${GREEN}Clonado com sucesso!${NC}\n"
-cd "$REPO_DIR" || exit 1
-printf "${BLUE}Instalando módulos npm...${NC}\n"
-npm install --omit=dev --silent
-else
-cd "$REPO_DIR" || exit 1
-fi
-
 mode="$1"
-printf "${MAGENTA}Iniciando Nahida Base em modo:${NC}\n"
-printf "╔════════════════════════════════════════════╗\n"
-if [ "$mode" = "--pairing-code" ]; then
-printf "║ ${YELLOW}MODO PAIRING CODE${NC} ║\n"
-else
-printf "║ ${YELLOW}MODO MOBILE${NC} ║\n"
-fi
-printf "╚════════════════════════════════════════════╝${NC}\n\n"
+printf "${MAGENTA}Iniciando em modo: "
+[ "$mode" = "--pairing-code" ] && printf "PAIRING CODE" || printf "MOBILE"
+printf "${NC}\n\n"
 
 node index.js "$mode"
 
-printf "\n${BLUE}Pressione Enter para voltar ao menu...${NC}"
+printf "\n${BLUE}Pressione Enter para voltar...${NC}"
 read -r
 }
 
@@ -130,7 +112,7 @@ read -r
 contact_creator() {
 header
 printf "${BG}${MAGENTA}╔════════════════════════════════════════════╗${NC}\n"
-printf "${BG}${MAGENTA}║ㅤㅤㅤㅤ  ㅤCONTATO DO CRIADOR  ㅤㅤㅤㅤㅤㅤ║${NC}\n"
+printf "${BG}${MAGENTA}║ㅤㅤㅤㅤㅤCONTATO DO CRIADORㅤㅤㅤㅤㅤㅤ║${NC}\n"
 printf "${BG}${MAGENTA}╚════════════════════════════════════════════╝${NC}\n\n"
 
 printf "${CYAN}Escolha uma forma de contato:${NC}\n"
@@ -144,55 +126,33 @@ printf "\n${CYAN}╰─➤ Digite sua escolha: ${NC}"
 read -r contact_option
 
 case $contact_option in
-1)
-printf "\n${CYAN}Abrindo WhatsApp...${NC}\n"
-xdg-open "https://wa.me/message/4IV4I7JBGSU6M1"
-sleep 2
-;;
-2)
-printf "\n${CYAN}Abrindo Instagram...${NC}\n"
-xdg-open "https://www.instagram.com/lucas_mod_domina"
-sleep 2
-;;
-3)
-printf "\n${CYAN}Abrindo GitHub...${NC}\n"
-xdg-open "https://github.com/Otakump4"
-sleep 2
-;;
-4)
-printf "\n${CYAN}Abrindo YouTube...${NC}\n"
-xdg-open "https://www.youtube.com/@Otaku.mp4"
-sleep 2
-;;
-5)
-printf "\n${CYAN}Abrindo Telegram...${NC}\n"
-xdg-open "https://t.me/LUCAS_MOD_DOMINA"
-sleep 2
-;;
-6)
-main_menu
-;;
-*)
-printf "\n${RED}Opção inválida! Tente novamente.${NC}\n"
+1) xdg-open "https://wa.me/message/4IV4I7JBGSU6M1" ;;
+2) xdg-open "https://www.instagram.com/lucas_mod_domina" ;;
+3) xdg-open "https://github.com/Otakump4" ;;
+4) xdg-open "https://www.youtube.com/@Otaku.mp4" ;;
+5) xdg-open "https://t.me/LUCAS_MOD_DOMINA" ;;
+6) main_menu ; return ;;
+*) 
+printf "\n${RED}Opção inválida!${NC}\n"
 sleep 1
 contact_creator
+return
 ;;
 esac
 
 printf "\n${BLUE}Pressione Enter para continuar...${NC}"
 read -r
-main_menu
 }
 
-# Menu principal
+# Menu principal otimizado
 main_menu() {
 while true; do
 header
 printf "${CYAN}Selecione uma opção:\n"
 printf "${YELLOW}1) ${GREEN}Iniciar com Pairing Code${NC}\n"
 printf "${YELLOW}2) ${GREEN}Iniciar modo Mobile${NC}\n"
-printf "${YELLOW}3) ${BLUE}Instalar Dependências${NC}\n"
-printf "${YELLOW}4) ${MAGENTA}Contato do Criador${NC}\n"
+printf "${YELLOW}3) ${MAGENTA}Instalar Dependências${NC}\n"
+printf "${YELLOW}4) ${CYAN}Contato do Criador${NC}\n"
 printf "${YELLOW}5) ${RED}Sair${NC}\n"
 printf "\n${CYAN}╰─➤ Digite sua escolha: ${NC}"
 
@@ -207,7 +167,7 @@ printf "\n${GREEN}✧ Até logo! ✧${NC}\n"
 exit 0
 ;;
 *)
-printf "${RED}Opção inválida! Tente novamente.${NC}\n"
+printf "${RED}Opção inválida!${NC}\n"
 sleep 1
 ;;
 esac
