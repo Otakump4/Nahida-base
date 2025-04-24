@@ -1,6 +1,6 @@
 //By: 𖧄 𝐋𝐔𝐂𝐀𝐒 𝐌𝐎𝐃 𝐃𝐎𝐌𝐈𝐍𝐀 𖧄
 //Canal: https://whatsapp.com/channel/0029Va6riekH5JLwLUFI7P2B
-const { getBuffer, getFileBuffer, execSync, ffmpeg, axios, spawn, fetchJson, getGroupAdmins, exec, linkfy, gradient, Pino, fs, cfonts, colors, speed, moment, number, path, infoSystem, phoneNumber, pairingCode, useMobile, readline, rl, question, NodeCache, makeWASocket, downloadContentFromMessage, emitGroupParticipantsUpdate, emitGroupUpdate, makeInMemoryStore, prepareWAMessageMedia, MediaType, WAMessageStatus, AuthenticationState, GroupMetadata, initInMemoryKeyStore, MiscMessageGenerationOptions, useMultiFileAuthState, BufferJSON, WAMessageProto, MessageOptions, PHONENUMBER_MCC, WAFlag, WANode, WAMetric, ChatModification, MessageTypeProto, WALocationMessage, ReconnectMode, WAContextInfo, proto, WAGroupMetadata, ProxyAgent, waChatKey, MimetypeMap, MediaPathMap, WAContactMessage, WAContactsArrayMessage, WAGroupInviteMessage, WATextMessage, WAMessageContent, WAMessage, BaileysError, WA_MESSAGE_STATUS_TYPE, MediaConnInfo, generateWAMessageContent, URL_EXCLUDE_REGEX, Contact, WAUrlInfo, WA_DEFAULT_EPHEMERAL, WAMediaUpload, mentionedJid, processTime, Browser, makeCacheableSignalKeyStore, MessageType, Presence, WA_MESSAGE_STUB_TYPES, Mimetype, relayWAMessage, Browsers, GroupSettingChange, delay, DisconnectReason, WASocket, getStream, WAProto, isBaileys, AnyMessageContent, generateWAMessageFromContent, fetchLatestBaileysVersion, processMessage, areJidsSameUser, processingMutex, upload } = require('./arquivos/modulos.js')
+const { getBuffer, getFileBuffer, execSync, ffmpeg, axios, spawn, fetchJson, getGroupAdmins, exec, linkfy, gradient, Pino, fs, cfonts, colors, speed, moment, number, path, infoSystem, phoneNumber, pairingCode, useMobile, readline, rl, question, NodeCache, makeWASocket, downloadContentFromMessage, emitGroupParticipantsUpdate, emitGroupUpdate, makeInMemoryStore, prepareWAMessageMedia, MediaType, WAMessageStatus, AuthenticationState, GroupMetadata, initInMemoryKeyStore, MiscMessageGenerationOptions, useMultiFileAuthState, BufferJSON, WAMessageProto, MessageOptions, PHONENUMBER_MCC, WAFlag, WANode, WAMetric, ChatModification, MessageTypeProto, WALocationMessage, ReconnectMode, WAContextInfo, proto, WAGroupMetadata, ProxyAgent, waChatKey, MimetypeMap, MediaPathMap, WAContactMessage, WAContactsArrayMessage, WAGroupInviteMessage, WATextMessage, WAMessageContent, WAMessage, BaileysError, WA_MESSAGE_STATUS_TYPE, MediaConnInfo, generateWAMessageContent, URL_EXCLUDE_REGEX, Contact, WAUrlInfo, WA_DEFAULT_EPHEMERAL, WAMediaUpload, mentionedJid, processTime, Browser, makeCacheableSignalKeyStore, MessageType, Presence, WA_MESSAGE_STUB_TYPES, Mimetype, relayWAMessage, Browsers, GroupSettingChange, delay, DisconnectReason, WASocket, getStream, WAProto, isBaileys, AnyMessageContent, generateWAMessageFromContent, fetchLatestBaileysVersion, processMessage, areJidsSameUser, processingMutex, upload, color } = require('./arquivos/modulos.js')
 /*--------------------------------------------------------------------------------------------------------*/
 const { ativarDesativarBotoes, config } = require('./config/modulos.js')
 /*--------------------------------------------------------------------------------------------------------*/
@@ -672,7 +672,7 @@ reagir("🎅")
 await esperar(1000)
 reagir("🫧")
 await sendAudio(from, audiomenu, "audio/mpeg", info)
-nahida.sendMessage(from, { image: { url: link }, caption: `
+nahida.sendMessage(from, { video: { url: link }, caption: `
 🌸🌟 *INFORMAÇÕES DO BOT* 🌟🌸
 ╭───────────────「 *INFO* 」──────────────
 │🔢 *Número:* @${sender.split("@")[0]}
@@ -1273,9 +1273,8 @@ case 'play2':
 try {
 if(!q) return reply(`${prefix+comando} link ou nome`)
 reagir(from, "🔥")
-zeroTwoCarregamento(from, `ৎ❥̤֟٭ۣۜ𝙴𝚗𝚟𝚒𝚊𝚗𝚍𝚘 𝚂𝚞𝚊 𝙼ú𝚜𝚒𝚌𝚊🍧.ᩦ୭✧ࣶᭂ`, selocarrinho)
-data = await fetchJson(`${zerosite}/api/ytsrc/videos?q=${q}&apikey=`+API_KEY_ZEROTWO)
-console.log(color('[PLAY 2]', 'magenta'), color(`PROCURANDO MÚSICA NO YT`, 'yellow')) 
+carregamento(from, `ৎ❥̤֟٭ۣۜ𝙴𝚗𝚟𝚒𝚊𝚗𝚍𝚘 𝚂𝚞𝚊 𝙼ú𝚜𝚒𝚌𝚊🍧.ᩦ୭✧ࣶᭂ`, selocarrinho)
+data = await fetchJson(zerosite + `/api/ytsrc?q=${q}&apikey=` + API_KEY_ZEROTWO)
 nahida.sendMessage(from, {audio: {url: `${zerosite}/api/dl/ytaudio2?url=${data.resultado[0].url}&apikey=`+API_KEY_ZEROTWO}, fileName: data.resultado[0].title+'.mp3', mimetype: 'audio/mp4', ptt: true, headerType: 4, contextInfo: { externalAdReply: { title: data.resultado[0].title, body: data.resultado[0].description, showAdAttribution: true, thumbnail: await getBuffer(data.resultado[0].image), mediaType: 2, mediaUrl: data.resultado[0].url, sourceUrl: data.resultado[0].url}}}, {quoted: selocarrinho}).catch(e => {
 return reply(downon)
 })
@@ -1291,7 +1290,7 @@ reagir(from, "🔥")
 try {
 if(!q) return reply(`> Exemplo:\n\n${prefix+comando} poze desabafo`)
 await reply(`> Estou atendendo seu pedido [ ${pushname} ]`)
-ABC = await fetchJson(`${zerosite}/api/ytsrc/videos?q=${q}&apikey=`+API_KEY_ZEROTWO)
+ABC = await fetchJson(zerosite + `/api/ytsrc?q=${q}&apikey=` + API_KEY_ZEROTWO)
 data = ABC.resultado[0]
 const buffer = await getBuffer(data.thumbnail) 
 nahida.sendMessage(from, {audio: {url: `${zerosite}/api/dl/ytaudio2?url=${data.url}&apikey=`+API_KEY_ZEROTWO}, mimetype: "audio/mp4",
@@ -1316,7 +1315,7 @@ try {
 reagir(from, "🎵")
 if (!q) return reply(`${prefix + comando} link ou nome`)
 if (!isUrl(q)) {
-ABC = await fetchJson(zerosite + `/api/ytsrc?q=${q}&apikey=` + API_KEY_ZEROTWO);
+ABC = await fetchJson(zerosite + `/api/ytsrc?q=${q}&apikey=` + API_KEY_ZEROTWO)
 data = ABC.resultado[0]
 con = converterMin(Number((contarMin(data.timestamp || "5:32") / 100) * 30).toFixed(0))
 ini = con.includes(`ser um`) ? `0:35` : con.slice(1, con.length)
@@ -1550,8 +1549,7 @@ case 'ytsearch':
 if(q.trim().length < 4) return reply(`> Exemplo: ${prefix+comando} Mc Cabelinho`)
 try {
 ABC = await fetchJson(`${zerosite}/api/ytsrc/videos?q=${q}&apikey=`+API_KEY_ZEROTWO)
-console.log(color('[YT PLAY SEARCH]', 'magenta'), color(`FAZENDO PESQUISAR QUE FOI SOLICITADA NO YT`, 'yellow')) 
-RST = `> 🎥 [Total: ${ABC.resultado.length}] – *Pesquisa YouTube:*\n• Deseja realizar o download do áudio? Use o comando: *${prefix}ytall [link]*\n• Fazer download do vídeo? É fácil! Só usar o comando: *${prefix}ytall [link]*\n–\n`
+RST = `> 🎥 [Total: ${ABC.resultado.length}] – *Pesquisa YouTube:*\n• Deseja realizar o download do áudio? Use o comando: *${prefix}play4 [link]*\n• Fazer download do vídeo? É fácil! Só usar o comando: *${prefix}playvideo [link]*\n–\n`
 RST += `${ABC.resultado.map((v, index) => `*${index+1}.* Link: *${v.url}*\n• Título: *${v.title}*\n• Duração: *${v.duration.timestamp} | ${v.duration.seconds} segundos.*`).join('\n–\n')}`
 reply(RST)
 } catch(e) {
@@ -1783,7 +1781,6 @@ case 'ytstalk':
 if (!q) return reply(`Cadê o canal do YouTube que você deseja pesquisar? \n*Exemplo:* ${prefix + comando} @Otaku.mp4`)
 nahida.sendMessage(from, { react: { text: `🔍`, key: info.key }})
 try {//By: 𖧄 𝐋𝐔𝐂𝐀𝐒 𝐌𝐎𝐃 𝐃𝐎𝐌𝐈𝐍𝐀 𖧄
-console.log(color('[YOUTUBE STALK]', 'magenta'), color(`BUSCANDO INFORMAÇÕES DO CANAL NO YOUTUBE`, 'yellow'))
 res = await fetchJson(`${zerosite}/vip/youtube-channel?query=${encodeURIComponent(q)}&apikey=`+API_KEY_ZEROTWO)
 let channel = res.resultado[0]
 let responseMessage = `*⏤͟͟͞͞⃝💨Nome do Canal*: ${channel.channel_name}\n` +
@@ -1806,7 +1803,6 @@ case 'ghstalk':
 if (!q) return reply(`Cadê o usuário do GitHub que você deseja pesquisar? \n*Exemplo:* ${prefix + comando} Otakump4`)
 nahida.sendMessage(from, { react: { text: `🔍`, key: info.key }})
 try {//By: 𖧄 𝐋𝐔𝐂𝐀𝐒 𝐌𝐎𝐃 𝐃𝐎𝐌𝐈𝐍𝐀 𖧄
-console.log(color('[GITHUB STALK]', 'magenta'), color(`BUSCANDO INFORMAÇÕES DO USUÁRIO NO GITHUB`, 'yellow'))
 let res = await fetchJson(`${lolhumam}/api/github/${encodeURIComponent(q)}?apikey=${API_KEY_LOLHUMAM}`)
 if (res.status !== 200 || !res.result) throw new Error("API request failed or no results found")
 let user = res.result
@@ -1839,7 +1835,6 @@ case 'ipstalk':
 if (!q) return reply(`Cadê o endereço IP que você deseja pesquisar? \n*Exemplo:* ${prefix + comando} 114.142.169.38`)
 nahida.sendMessage(from, { react: { text: `🔍`, key: info.key }})
 try {//By: 𖧄 𝐋𝐔𝐂𝐀𝐒 𝐌𝐎𝐃 𝐃𝐎𝐌𝐈𝐍𝐀 𖧄
-console.log(color('[IP STALK]', 'magenta'), color(`BUSCANDO INFORMAÇÕES DO ENDEREÇO IP`, 'yellow'))
 let res = await fetchJson(`${lolhumam}/api/ipaddress/${encodeURIComponent(q)}?apikey=${API_KEY_LOLHUMAM}`)
 if (res.status !== 200 || !res.result) throw new Error("API request failed or no results found")
 let ipInfo = res.result
