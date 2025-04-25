@@ -23,11 +23,11 @@
 
 <p align="center">
 <a href="https://youtu.be/4n_HCLFXAhE?si=alnIqcgCDjBHOlV4" target="_blank">
-<img src="https://zero-two.info/uploads/images/file-1739169354212-382718485.jpeg" alt="Assistir ao v¨ªdeo" width="150">
+<img src="https://zero-two.info/uploads/images/file-1739169354212-382718485.jpeg" alt="Assistir ao video" width="150">
 </a>
 </p>
 
- 🔗 **[Assista ao video completo aqui](https://youtu.be/4n_HCLFXAhE?si=alnIqcgCDjBHOlV4)**
+ 🔗 **[Assista ao video completo aqui](https://youtu.be/8eO7WksS7Y0?si=q2mffOZw9N_tYh5F)**
 
 ---
 
