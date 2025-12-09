@@ -2,7 +2,7 @@
 
 <h1 align="center">
 <p>
-<img src= "https://zero-two.info/uploads/images/file-1745447805865-948918569.jpeg" alt="NAHIDA BASE V1✓" width="720">
+<img src= "https://uploads.zero-two-apis.com.br/uploads/images/file-1745447805865-948918569.jpeg" alt="NAHIDA BASE V1✓" width="720">
 </p>
 
 <p align="center">
@@ -17,13 +17,13 @@
 
 <p align="center">
 <a href="https://youtu.be/8eO7WksS7Y0?si=q2mffOZw9N_tYh5F" target="_blank">
-<img src="https://zero-two.info/uploads/images/file-1745447805865-948918569.jpeg" alt="Video do Bot" width="700">
+<img src="https://uploads.zero-two-apis.com.br/uploads/images/file-1745447805865-948918569.jpeg" alt="Video do Bot" width="700">
 </a>
 </p>
 
 <p align="center">
 <a href="https://youtu.be/4n_HCLFXAhE?si=alnIqcgCDjBHOlV4" target="_blank">
-<img src="https://zero-two.info/uploads/images/file-1739169354212-382718485.jpeg" alt="Assistir ao video" width="150">
+<img src="https://uploads.zero-two-apis.com.br/uploads/images/file-1739169354212-382718485.jpeg" alt="Assistir ao video" width="150">
 </a>
 </p>
 
