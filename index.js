@@ -1045,7 +1045,7 @@ media: owgi
 headers: { 'Content-Type': 'multipart/form-data' }
 })
 if (uploadRes.data.status) {
-return sendUrlText(from, uploadRes.data.resultado, `Link da imagem gerado com sucesso ↴`, '', uploadRes.data.resultado, uploadRes.data.resultado, selocarrinho)
+return sendUrlText(from, uploadRes.data.resultado, `Link da imagem gerado com sucesso ↴`, 'Link pode expirar em 1 hora', uploadRes.data.resultado, uploadRes.data.resultado, selocarrinho)
 } else {
 reply('Erro ao gerar o link da imagem.')
 }
@@ -1063,7 +1063,7 @@ media: owgi
 headers: { 'Content-Type': 'multipart/form-data' }
 })
 if (uploadRes.data.status) {
-return sendUrlText(from, uploadRes.data.resultado, `Link do vídeo gerado com sucesso ↴`, '', link, uploadRes.data.resultado, selocarrinho)
+return sendUrlText(from, uploadRes.data.resultado, `Link do vídeo gerado com sucesso ↴`, 'Link pode expirar em 1 hora', link, uploadRes.data.resultado, selocarrinho)
 } else {
 reply('Erro ao gerar o link do vídeo.')
 }
@@ -1081,7 +1081,7 @@ media: owgi
 headers: { 'Content-Type': 'multipart/form-data' }
 })
 if (uploadRes.data.status) {
-return sendUrlText(from, uploadRes.data.resultado, `Link do áudio gerado com sucesso ↴`, '', link, uploadRes.data.resultado, selocarrinho)
+return sendUrlText(from, uploadRes.data.resultado, `Link do áudio gerado com sucesso ↴`, 'Link pode expirar em 1 hora', link, uploadRes.data.resultado, selocarrinho)
 } else {
 reply('Erro ao gerar o link do áudio.')
 }
@@ -1259,7 +1259,7 @@ await sleep(5000)
 audio = q
 }
 await sleep(1000)
-sendAudio(from, zerosite + `/api/dl/ytaudio2?url=${audio}&apikey=` + API_KEY_ZEROTWO, "audio/mpeg", selocarrinho).catch(e => {
+sendAudio(from, zerosite + `/api/dl/ytaudio?url=${audio}&apikey=` + API_KEY_ZEROTWO, "audio/mpeg", selocarrinho).catch(e => {
 return reply(downon)
 })
 } catch (e) {
@@ -1392,7 +1392,7 @@ ${tempo}❣️
 link = data.url
 } else {link = q
 bla = ``}
-sendVideo(from, zerosite+`/api/dl/ytvideo2?url=${link}&apikey=`+API_KEY_ZEROTWO, bla, selocarrinho).catch(e => {
+sendVideo(from, zerosite+`/api/dl/ytvideo?url=${link}&apikey=`+API_KEY_ZEROTWO, bla, selocarrinho).catch(e => {
 return reply(downon)
 })
 function getRandomAudioEndpoint() {
